@@ -3,7 +3,7 @@ import mysql.connector as conn
 
 app = Flask(__name__)
 
-mydb = conn.connect(host='localhost', user = 'root', passwd ='loveline123')
+mydb = conn.connect(host='localhost', user = 'root', passwd ='**********3')
 cursor = mydb.cursor()
 cursor.execute("create database if not exists tasksql")
 cursor.execute("create table if not exists tasksql.mysqltable(name varchar(30), number int)")
